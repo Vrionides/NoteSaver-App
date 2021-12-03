@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>About my App</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+h2 {
+left: 50%;
+    height: 90px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .centered {
+  left: 50%;
+  }
+}
+</style>
+<body>
+
+<!-- !PAGE CONTENT! -->
+
+    <!-- Header -->
+
+    <!-- Photo Grid -->
+<div class="row">
+
+    <div class="column">
+        <img src="file:///android_asset/first.jpg">
+        <img src="file:///android_asset/second.jpg">
+    </div>
+    <div class="column">
+        <img src="file:///android_asset/third.jpg">
+        <img src="file:///android_asset/fourth.jpg">
+    </div>
+
+    <div class="column">
+
+        <img src="file:///android_asset/fifth.jpg">
+        <img src="file:///android_asset/sixth.jpg">
+    </div>
+    <div class="column">
+
+        <img src="file:///android_asset/seventh.jpg">
+        <img src="file:///android_asset/fifth.jpg">
+    </div>
+</div>
+    <!-- End Page Content -->
+
+<div class="row">
+<div> <h2>About</h2></div>
+
+
+<footer id="about">
+
+
+    <form>
+        <p><font size="+2">The App i have created is called NotesSaver, where you can save notes.
+            When you first open the app you will start with no notes, so you press the "+" button to write your first note.
+            You will be taken to a new activity where you can write a title and the content of the Note.
+            Once you have finished writing your note you press the save button on the top right to save the note.
+            You will be taken back to the main screen to view your notes.
+            If you want to edit the note you press the note you want to edit and it will take you back into the edit Activity.
+            If you want to delete the note, when you are in the editor simply press the delete button on the top right and it will show you a confirmation box and press yes
+            The bell icon on the main activity set a reminder in 20 hours and send a notification for you to come back to the app.
+        </font></p>
+        <p><h5>Thank you for using my app!</h5></p>
+    </form>
+</footer>
+</div>
+</body>
+</html>
